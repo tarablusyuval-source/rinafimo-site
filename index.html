@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RinaFimo &mdash; Handmade Polymer Clay Art</title>
+  <meta name="description" content="RinaFimo art gallery — handmade polymer clay creations.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">RinaFimo</a>
+      <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>RinaFimo</h1>
+      <p>Handmade polymer clay art &amp; miniatures</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item placeholder">Add photo 1<br><small>images/photo1.jpg</small></div>
+        <div class="gallery-item placeholder">Add photo 2<br><small>images/photo2.jpg</small></div>
+        <div class="gallery-item placeholder">Add photo 3<br><small>images/photo3.jpg</small></div>
+        <div class="gallery-item placeholder">Add photo 4<br><small>images/photo4.jpg</small></div>
+        <div class="gallery-item placeholder">Add photo 5<br><small>images/photo5.jpg</small></div>
+        <div class="gallery-item placeholder">Add photo 6<br><small>images/photo6.jpg</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Welcome to RinaFimo! Every piece here is handmade from polymer clay,
+        shaped and baked with care. Replace this paragraph with your own story:
+        how you started, your style, and what makes your work unique.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Interested in a custom piece or have a question? Reach out:</p>
+      <p><a href="mailto:hello@rinafimo.co.il">hello@rinafimo.co.il</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> RinaFimo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
