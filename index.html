@@ -55,8 +55,31 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Interested in a custom piece or have a question? Reach out:</p>
-      <p><a href="mailto:hello@rinafimo.co.il">hello@rinafimo.co.il</a></p>
+      <p>Interested in a custom piece or have a question? Send a message and I'll reply by email:</p>
+
+      <!-- TODO: replace YOUR_FORM_ID with the ID from your Formspree form (https://formspree.io/f/YOUR_FORM_ID) -->
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xyezwypy" method="POST">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Honeypot field to help filter spam bots; keep hidden from real visitors -->
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
+
+        <button type="submit">Send Message</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+
+      <p>Or email directly: <a href="mailto:hello@rinafimo.co.il">hello@rinafimo.co.il</a></p>
     </div>
   </section>
 
@@ -68,6 +91,35 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      status.textContent = 'Sending...';
+      status.className = 'form-status';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          status.textContent = 'Thanks! Your message has been sent.';
+          status.classList.add('success');
+        } else {
+          status.textContent = 'Something went wrong. Please try emailing directly.';
+          status.classList.add('error');
+        }
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try emailing directly.';
+        status.classList.add('error');
+      }
+    });
   </script>
 </body>
 </html>
