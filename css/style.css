@@ -1,0 +1,138 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--brand-dark);
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--brand-color);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--brand-color), var(--brand-dark));
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.gallery, .about, .contact {
+  padding: 60px 0;
+}
+
+.gallery h2, .about h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--brand-dark);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #e7ddd6;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9a8c82;
+  border: 2px dashed #cbb9ac;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 10px;
+}
+
+.gallery-item.placeholder small {
+  color: #b3a396;
+}
+
+.about {
+  background: #fff;
+}
+
+.about p, .contact p {
+  max-width: 700px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.contact a {
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.site-footer {
+  background: var(--brand-dark);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
