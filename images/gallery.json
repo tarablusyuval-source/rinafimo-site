@@ -1,5 +1,10 @@
 [
   {
+    "image": "images/example-item/P1030408crop.JPG",
+    "caption": "Example piece — replace this whole folder with your own photo + info.txt",
+    "link": "https://photos.google.com/share/your-album-link-here"
+  },
+  {
     "image": "images/item1/photo.svg",
     "caption": "עגילי נשים",
     "link": "https://goo.gl/photos/v9R2uvS6ag6CxQ1y9"
