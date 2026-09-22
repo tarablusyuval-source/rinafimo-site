@@ -1,12 +1,62 @@
 [
   {
-    "image": "images/example-item/P1030408crop.JPG",
-    "caption": "Example piece — replace this whole folder with your own photo + info.txt",
-    "link": "https://photos.google.com/share/your-album-link-here"
+    "image": "images/classes/classes.jpg",
+    "caption": "קיטנה",
+    "link": "https://photos.app.goo.gl/e81BUZ41ULVMmnBEA"
   },
   {
-    "image": "images/item1/photo.svg",
+    "image": "images/clips/clips.jpg",
+    "caption": "סיכות",
+    "link": "https://goo.gl/photos/g9WpKSWjtznDUXLf6"
+  },
+  {
+    "image": "images/clowns/clown.jpg",
+    "caption": "ליצנים",
+    "link": "https://photos.app.goo.gl/4RlfHchYC4RB2SNS2"
+  },
+  {
+    "image": "images/earings/earings.jpg",
     "caption": "עגילי נשים",
     "link": "https://goo.gl/photos/v9R2uvS6ag6CxQ1y9"
+  },
+  {
+    "image": "images/elephants/elephants.jpg",
+    "caption": "פילים מחימר פולימרי",
+    "link": "https://photos.app.goo.gl/pH9yjENsMn8HbFvg8"
+  },
+  {
+    "image": "images/figureearings/figureearings.jpg",
+    "caption": "עגילי דמויות",
+    "link": "https://goo.gl/photos/V5BeHv5ZwBayT9At8"
+  },
+  {
+    "image": "images/hamsa/hamsa.jpg",
+    "caption": "מחזיקי מפתחות",
+    "link": "https://photos.app.goo.gl/171uWGtvn8J8BJA79"
+  },
+  {
+    "image": "images/jewlaries/jewlaries.jpg",
+    "caption": "תכשיטים",
+    "link": "https://goo.gl/photos/rosenQaRc4ALRpBV8"
+  },
+  {
+    "image": "images/kaytana/kaytana.jpg",
+    "caption": "קיטנה",
+    "link": "https://photos.app.goo.gl/e81BUZ41ULVMmnBEA"
+  },
+  {
+    "image": "images/mezuza/mezuza.jpg",
+    "caption": "מזוזות",
+    "link": "https://photos.app.goo.gl/Q7ktjwdP2szGmwb59"
+  },
+  {
+    "image": "images/miniaturefood/miniature-food.jpg",
+    "caption": "אוכל מיניאטורי",
+    "link": "https://goo.gl/photos/32cp9UqaFFH2EfEC7"
+  },
+  {
+    "image": "images/mosaic/mosaic.jpg",
+    "caption": "סדנאות פסיפס בחימר פולימרי",
+    "link": "https://photos.app.goo.gl/e81BUZ41ULVMmnBEA"
   }
 ]
