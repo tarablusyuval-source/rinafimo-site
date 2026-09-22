@@ -1,0 +1,34 @@
+name: Build Gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate gallery.json
+        run: node scripts/build-gallery.mjs
+
+      - name: Commit updated gallery.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/gallery.json
+          git diff --cached --quiet || git commit -m "Auto-update gallery.json [skip ci]"
+          git push
