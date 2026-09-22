@@ -42,8 +42,9 @@
       <h2>About</h2>
       <p>
         Welcome to RinaFimo! Every piece here is handmade from polymer clay,
-        shaped and baked with care. 
-        <br>
+        shaped and baked with care.
+      </p>
+      <p dir="rtl">
         ברוכים הבאים לגלריית העבודות של רינה!
          כל פריט כאן עשוי בעבודת יד מחימר פולימרי
         ומעוצב ונאפה בקפידה.
@@ -58,15 +59,19 @@
 
       <form id="contact-form" class="contact-form" action="https://formspree.io/f/xyezwypy" method="POST">
         <div class="form-row">
-          <label for="name">Name</label>
+          <label for="name">Name שם</label>
           <input type="text" id="name" name="name" required>
         </div>
         <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <label for="email">Email (optional) דוא"ל (אופציונלי)</label>
+          <input type="email" id="email" name="email">
         </div>
         <div class="form-row">
-          <label for="message">Message</label>
+          <label for="phone">Phone (optional) טלפון (אופציונלי)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="message">Message הודעה</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
